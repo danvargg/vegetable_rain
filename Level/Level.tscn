@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.415686, 0.729412, 0.254902, 1 )
+
+[node name="Level" type="Spatial"]
+
+[node name="Platform" type="CSGBox" parent="."]
+snap = 0.0001
+width = 10.0
+height = 0.1
+depth = 10.0
+material = SubResource( 1 )
+
+[node name="Wall2" type="CSGBox" parent="Platform"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.20732 )
+width = 10.0
+depth = 0.385557
+
+[node name="Wall3" type="CSGBox" parent="Platform"]
+transform = Transform( 0.00563741, 0, 0.999984, 0, 1, 0, -0.999984, 0, 0.00563741, -5.2224, 0, 0.00980544 )
+width = 10.0
+depth = 0.385557
+
+[node name="Wall4" type="CSGBox" parent="Platform"]
+transform = Transform( 0.00563741, 0, 0.999984, 0, 1, 0, -0.999984, 0, 0.00563741, 5.11949, 0, 0.00980544 )
+width = 10.0
+depth = 0.385557
+
+[node name="Wall" type="CSGBox" parent="Platform"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.19197 )
+width = 10.0
+depth = 0.385557
