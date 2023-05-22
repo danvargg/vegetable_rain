@@ -301,9 +301,7 @@ tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -4.47034e-08, -2.98024e-08, 1, 1, 1, 1, 0.266667, 1, 0, 0, 0, 2.98023e-08, -4.47034e-08, -2.98024e-08, 1, 1, 1, 1 )
 
-[node name="Shotgun" type="Spatial" groups=[
-"Shotgun",
-]]
+[node name="Shotgun" type="Spatial" groups=["Shotgun"]]
 script = ExtResource( 7 )
 
 [node name="ShotgunArmature" type="Skeleton" parent="."]

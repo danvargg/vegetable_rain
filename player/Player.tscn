@@ -54,4 +54,5 @@ stream = ExtResource( 4 )
 
 [node name="Cooldown" type="Timer" parent="."]
 one_shot = true
+
 [connection signal="timeout" from="Cooldown" to="." method="_on_Cooldown_timeout"]
