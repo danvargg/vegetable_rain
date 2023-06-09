@@ -17,7 +17,9 @@ func _process(delta):
 	var direction = $Head.get_global_transform().basis
 	var target = null
 
-#	if Input.is_action_pressed("jump") and is_on_floor(): velocity += direction.y
+
+#   if Input.is_action_pressed("jump") and is_on_floor(): velocity.y += 10
+#	if Input.is_action_pressed("jump") and is_on_floor(): velocity.y += GRAVITY
 	if Input.is_action_pressed("forward"): velocity -= direction.z
 	if Input.is_action_pressed("backward"): velocity += direction.z
 	if Input.is_action_pressed("rightward"): velocity += direction.x
